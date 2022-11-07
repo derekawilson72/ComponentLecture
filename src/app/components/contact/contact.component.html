@@ -1,0 +1,13 @@
+<p>contact works!</p>
+
+<div class="container">
+    <img src="{{contact.image}}"/>
+    <h2>{{contact.name}}</h2>
+    <p>{{contact.email}}</p>
+    
+    <div *ngIf="!contact.nodelete">
+        Delete This
+        <button (click)="deleteContact()"> Delete </button>
+    </div>
+    
+</div>

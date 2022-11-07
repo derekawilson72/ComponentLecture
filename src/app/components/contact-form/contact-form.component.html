@@ -1,0 +1,13 @@
+<p>contact-form works!</p>
+
+
+<form class="container" (ngSubmit)="addContact()">
+    <select name="image"  [(ngModel)]="contact.image" >
+        <option *ngFor="let p of pictures" value="{{ p.url }}">{{ p.name }}</option>
+    </select>
+    <input type="text" name="name"   id="name"  [(ngModel)]="contact.name" />
+    <input type="email" name="email" id="email" [(ngModel)]="contact.email" />
+    <button>Add Contact</button>
+</form>
+
+
